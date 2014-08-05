@@ -1,0 +1,373 @@
+@charset "utf-8";
+#base1 {
+	height: 718px;
+	width: 100%;
+	background-color: #000;
+	background-image: url(img/back1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#pie2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#base1 #cabeza1 {
+	height: 90px;
+	width: 100%;
+	background-image: url(img/fondo-azul.png);
+}
+#base1 #cabeza1 a #logo1 {
+	margin-top: 5px;
+	margin-left: 5em;
+}
+#base2 #cont2 {
+	height: 465px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	background-image: url(img/bgcont2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 35px;
+	color: #666;
+	font-size: 14px;
+}
+#base2 #cont2 #imgcont2 {
+	width: 300px;
+	float: left;
+	height: 450px;
+}
+
+.basecss {
+	height: 718px;
+	width: 100%;
+}
+#base4 #cabeza4 {
+	height: 90px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+#base3 #cabeza3 {
+	height: 90px;
+	width: 100%;
+	background-image: url(img/fondo-gris.png);
+	background-repeat: repeat;
+}
+
+
+
+.logo {
+	margin-top: 5px;
+	margin-left: 5em;
+}
+
+#base1 #menu {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	margin-top: 2em;
+	background-image: url(img/fondo-azul.png);
+	padding-left: 5em;
+	z-index: 2;
+	font-size: 12px;
+}
+#base3 #cont3 #video {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 400px;
+	margin-top: 50px;
+	font-size: 14px;
+	color: #FFF;
+}
+#base4 #cont4 #basedescarga #textdes {
+	float: left;
+	width: 450px;
+	height: 400px;
+	font-size: 18px;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#base4 #cont4 #basedescarga #imgdes {
+	float: right;
+	width: 330px;
+	height: 400px;
+}
+
+
+#base4 #cont4 #basedescarga {
+	height: 400px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#base1 #cabeza1 #login {
+	height: 90px;
+	width: auto;
+	float: right;
+	margin-right: 5em;
+}
+
+
+
+
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base2 {
+	width: 100%;
+	display: block;
+	height: 718px;
+}
+#base3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(img/fondi_r2.png);
+}
+#base4 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(img/fondo2.png);
+	background-repeat: repeat-x;
+}
+#pie2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+#base2 #cabeza2 {
+	background-image: url(img/fondi_r.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 90px;
+}
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base4 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+#pie2 {
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	background-image: url(img/fondo-gris.png);
+	color: #333;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base2 {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	height: 718px;
+	float: left;
+}
+#base3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#base4 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#pie2 {
+	width: 100%;
+	display: block;
+	height: auto;
+	text-align: center;
+}
+}
+#base1 #cont1 {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+	z-index: 0;
+	height: 500px;
+	width: 800px;
+	color: #CCC;
+}
+#base3 #cont3 {
+	height: 500px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	background-image: url(img/fondo-gris.png);
+}
+#base4 #cont4 {
+	height: 400px;
+	width: 100%;
+	margin-top: 100px;
+	background-image: url(img/fondo-azul.png);
+}
+#base4 #pie {
+	background-image: url(img/fondo-gris.png);
+	width: 100%;
+	height: 118px;
+	text-align: center;
+	padding-top: 10px;
+	color: #666;
+}
+#base1 #cont1 #cell {
+	float: right;
+	height: 450px;
+	width: 250px;
+	margin-top: 10px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+#base1 #cont1 #text1 {
+	float: left;
+	width: 450px;
+	height: 480px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+
+#base1 #cabeza1 #login form table tr td label {
+	font-size: 9px;
+}
+.txt {
+	text-align: center;
+}
+.txtex {
+	font-size: 12px;
+}
