@@ -1,0 +1,52 @@
+article
+{
+    display: inline-block;
+}
+body
+{
+    margin: 0px;
+}
+html
+{
+    color: #cfcfcf;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+}
+#cellphone
+{
+    background-image: url('img/cell.png');
+    float: right;
+    height: 413px;
+    width: 211px;
+}
+#content
+{
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 5em;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    width: 60%;
+}
+#download
+{
+    height: 296px;
+    width: 346px;
+}
+#section1
+{
+    background-color: black;
+    background-image: url(img/back1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 718px;
+    width: 100%;
+}
+#section1 header
+{
+    background-color: rgba(98, 175, 226, 0.5);
+    width: 100%;
+}
+#section1 header img
+{
+    margin-left: 5em;
+}
