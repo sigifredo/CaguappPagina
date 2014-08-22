@@ -32,7 +32,7 @@ html
     height: 296px;
     width: 346px;
 }
-#section1
+#index
 {
     background-color: black;
     background-image: url(img/back1.jpg);
@@ -41,12 +41,82 @@ html
     height: 718px;
     width: 100%;
 }
-#section1 header
+#index header
 {
     background-color: rgba(98, 175, 226, 0.5);
     width: 100%;
 }
-#section1 header img
+#index header img
 {
     margin-left: 5em;
 }
+#menu
+{
+    width: 100%;
+    margin-top: 2em;
+    padding-left: 5em;
+    z-index: 2;
+    font-size: 12px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    /*background-image: url('img/fondo-azul.png');*/
+    background-color: rgba(98, 175, 226, 0.5);
+}
+.stmenu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+            }
+            
+.stmenu > li {
+    margin: 0;
+    padding: 0;
+    float: left;/*esta propiedad hace que desaparezca el fondo azul*/
+    width: 12em;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    background-color: rgba(98, 175, 226, 0.5);
+            }
+            
+.stmenu li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5em 0.75em;
+            }
+            
+.stmenu li a:hover {
+/*    background-image: url('img/fondo-azul.png');*/
+    background-color: rgba(98, 175, 226, 0.5);
+            }
+            
+.stmenu li ul {
+
+	/*display:none;*/
+	cursor: default;
+	width: 12.2em;
+	position: absolute;
+	opacity: 0;
+	transition: opacity .35s ease .2s;
+	-webkit-transition: opacity .35s ease .2s;
+	-moz-transition: opacity .35s ease .2s;
+	-o-transition: opacity .35s ease .2s;
+	visibility:hidden;
+            }
+            
+.stmenu li:hover > ul {
+               /* display:block;*/
+opacity:1;
+	visibility:visible;
+right:-2px;
+            }
+            
+.stmenu li ul li {
+                position:relative;
+            }
+            
+.stmenu li ul li ul {
+                /*right:-140px;
+                top:0px;
+            }
