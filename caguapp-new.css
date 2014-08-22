@@ -19,7 +19,7 @@ html
     height: 413px;
     width: 211px;
 }
-#content
+#index #content
 {
     font-weight: bold;
     margin: 0 auto;
@@ -27,7 +27,7 @@ html
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
     width: 60%;
 }
-#download
+#index #download
 {
     height: 296px;
     width: 346px;
@@ -46,10 +46,12 @@ html
     background-color: rgba(98, 175, 226, 0.5);
     width: 100%;
 }
-#index header img
+header img
 {
     margin-left: 5em;
 }
+
+/*estilo para el menú hay incompatibilidad en el fondo del nav cuando se utiliza la propiedad float en el li*/
 #menu
 {
     width: 100%;
@@ -61,14 +63,16 @@ html
     /*background-image: url('img/fondo-azul.png');*/
     background-color: rgba(98, 175, 226, 0.5);
 }
-.stmenu{
+.stmenu
+{
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 100%;
-            }
+}
             
-.stmenu > li {
+.stmenu > li
+{
     margin: 0;
     padding: 0;
     float: left;/*esta propiedad hace que desaparezca el fondo azul*/
@@ -77,21 +81,21 @@ html
     text-align: center;
     position: relative;
     background-color: rgba(98, 175, 226, 0.5);
-            }
+}
             
-.stmenu li a {
+.stmenu li a
+{
     display: block;
     text-decoration: none;
     color: #ffffff;
     padding: 0.5em 0.75em;
-            }
-            
-.stmenu li a:hover {
-/*    background-image: url('img/fondo-azul.png');*/
+}            
+.stmenu li a:hover 
+{
     background-color: rgba(98, 175, 226, 0.5);
-            }
-            
-.stmenu li ul {
+}
+.stmenu li ul
+{
 
 	/*display:none;*/
 	cursor: default;
@@ -103,20 +107,135 @@ html
 	-moz-transition: opacity .35s ease .2s;
 	-o-transition: opacity .35s ease .2s;
 	visibility:hidden;
-            }
-            
-.stmenu li:hover > ul {
-               /* display:block;*/
-opacity:1;
+}
+.stmenu li:hover > ul 
+{
+        /* display:block;*/
+	opacity:1;
 	visibility:visible;
-right:-2px;
-            }
-            
-.stmenu li ul li {
-                position:relative;
-            }
-            
-.stmenu li ul li ul {
-                /*right:-140px;
-                top:0px;
-            }
+	right:-2px;
+}
+.stmenu li ul li 
+{
+        position:relative;
+}
+/*fin menu*/
+footer/*hay que terminar de arrglar el estilo para que ocupe el espacio deseado*/
+{
+	background-image: url(img/fondo-gris.png);
+	width: 100%;
+	height:100%;
+	text-align: center;
+	color: #666;
+	margin: 0px;
+	padding:0px;
+}
+#about #content 
+{
+	height: 465px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	background-image: url(img/bgcont2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 35px;
+	color: #666;
+	font-size: 14px;
+}
+#about #content #imgcont2
+{
+	width: 300px;
+	float: left;
+	height: 450px;
+}
+#about header
+{
+	background-image: url(img/fondi_r.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 90px;
+}
+#howWork
+{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(img/fondi_r2.png);
+}
+#howWork header
+{
+	height: 90px;
+	width: 100%;
+	background-image: url(img/fondo-gris.png);
+}
+#howWork #content
+{
+	text-align: center;
+	font-size: 14px;
+	color: #FFF;
+
+/*el contenido aqui està combinado entre el tag video y cont3 de la version anterior*/
+	height: 500px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	background-image: url(img/fondo-gris.png);
+}
+#downloadPage
+{
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-image: url(img/fondo2.png);
+	background-repeat: repeat-x;
+}
+#downloadPage header
+{
+	height: 90px;
+	width: 100%;
+	background-color: #FFF;
+}
+#downloadPage #content
+{
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(img/fondo-azul.png);
+	width: 100%;
+}
+#downloadPage #content #central
+{
+	width: 800px;
+	margin-top: 100px;
+margin-right: auto;
+	margin-left: auto;
+}
+
+#downloadPage #content #textPage
+{
+	float: left;
+	text-align: center;
+	width: 450px;
+	height: 400px;
+	font-size: 18px;
+	color: #333;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 5em;
+}
+#downloadPage #content #textPage #beta
+{
+	font-size:12px
+}
+#downloadPage #content #imgDownload
+{
+	float: right;
+	width: 330px;
+	height: 400px;
+}
